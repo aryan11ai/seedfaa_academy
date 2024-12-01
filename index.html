@@ -11,6 +11,88 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        .topper_week{
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .topper-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            max-width: 300px;
+        }
+        .topper-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #4CAF50;
+            object-fit: cover;
+        }
+        .topper-card h2 {
+            margin: 10px 0;
+            color: #333333;
+        }
+        .topper-card p {
+            color: #777777;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .topper-card a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #4400ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .topper-card a:hover {
+            background: linear-gradient(rgb(25, 0, 255), rgb(89, 0, 255));
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .modal h3 {
+            margin: 10px 0;
+        }
+        .modal p {
+            color: #555555;
+            font-size: 14px;
+        }
+        .modal button {
+            background-color: #4400ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .modal button:hover {
+            background: linear-gradient(rgb(25, 0, 255), rgb(89, 0, 255));
+        }
+    </style>
+    <style>
 
         .nav-links a.active {
             color: #6728a1; /* Highlight active link */
@@ -175,6 +257,28 @@
             </div>
         </section>
 
+        <!--Topper of week-->
+        <section class="topper_week">
+            <div class="topper-card">
+                <img src="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/Ayushman.png" alt="Ayushman Verma">
+                <h2>Ayushman Verma</h2>
+                <p>Congratulations on your outstanding performance this week!</p>
+                <a onclick="openModal()">View Details</a>
+            </div>
+        
+            <div class="modal" id="modal">
+                <h3>Ayushman Verma</h3>
+                <p><b>Ayushman Verma</b> has achieved remarkable results this week, showcasing exceptional skills and dedication.</p>
+                <p>Father's name - <b>Ranjeet verma</b></p>  
+                <p>Address - Village - Arari, P.S - Birni, District - Giridih, State - Jharkhand </p>
+                <p><b>School name - Mount Agmount Public High School, Janta jaridih</b></p>
+                <p>Class - 6</p>
+                <p>Roll no - 1</p>
+                <p>Heigh Scored in <b>Math</b> total <b>49/50</b></p>
+                <button onclick="closeModal()">Close</button>
+            </div>        
+        </section>
+
         <section id="updates" class="updates">
             <div class="updatescrollview" id="updatescrollview" style="width: 90%; overflow: auto; display: flex;">
                 <div class="update">
@@ -219,7 +323,7 @@
         </section>
 
         <section id="event_photos" class="event_photos">
-            <h2 style="text-align: center;">Event Photo</h2>
+            <h2 style="text-align: center;" class="event_photo_title">Event Photo</h2>
     <!-- Swiper Container -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -601,5 +705,15 @@
           }
       });
   </script>
+  
+  <script>
+    function openModal() {
+        document.getElementById('modal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+</script>
 </body>
 </html>

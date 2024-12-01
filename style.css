@@ -58,7 +58,7 @@ body.dark-mode .updates{
   background-color: #333333;
 }
 body.dark-mode .updates .update{
-  background: #777777;
+  background: #444444;
 }
 body.dark-mode #feature{
   background-color: #272727;
@@ -84,6 +84,30 @@ body.dark-mode #about{
   color: white;
 }
 body.dark-mode #about a{
+  color: white;
+}
+body.dark-mode .topper_week{
+  background-color: #353535;
+}
+body.dark-mode .topper_week .topper-card{
+  background-color: #4e4e4e;
+}
+body.dark-mode .topper_week .topper-card h2{
+  color: white;
+}
+body.dark-mode .topper_week .topper-card p{
+  color: #919191;
+}
+body.dark-mode .topper_week .modal{
+  background-color: #4e4e4e;
+}
+body.dark-mode .topper_week .modal p{
+  color: white;
+}
+body.dark-mode .topper_week .modal h3{
+  color: rgb(190, 190, 190);
+}
+body.dark-mode .event_photo_title{
   color: white;
 }
 
