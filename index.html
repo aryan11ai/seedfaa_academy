@@ -8,6 +8,7 @@
     <link rel="icon" href="https://aryan11ai.github.io/Seedfaa-store/Seedfaa_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
 
@@ -217,7 +218,26 @@
             </div>
         </section>
 
-        <section id="games" class="games">
+        <section id="event_photos" class="event_photos">
+            <h2 style="text-align: center;">Event Photo</h2>
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/6aff7e6c2d82fb6f4e88d4ee12deacc030833972/images/slider_event_img_(1).png');" data-image="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/6aff7e6c2d82fb6f4e88d4ee12deacc030833972/images/slider_event_img_(1).png"></div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/slider_event_img_(2).png');" data-image="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/slider_event_img_(2).png"></div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide" style="background-image: url('https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/slider_event_img_(3).png');" data-image="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/slider_event_img_(3).png"></div>
+        </div>
+    </div>
+            
+
+        <!-- Full-Screen Viewer -->
+        <div class="fullscreen-viewer" id="fullscreenViewer">
+            <img id="fullscreenImage" src="" alt="Full Screen Image">
+            <div class="close-btn" id="closeViewer">&times;</div>
+        </div>
         </section>
 
 
@@ -270,7 +290,12 @@
                 <h2>Contact us</h2>
             <li><a href="https://wa.me/9110029392"><i class="fab fa-whatsapp"></i>+91 9110029392</a></li>
         </div>
+        
         </section>
+        <!--Sub Footer-->
+        <footer style="background-color: #1d1d1d; height: 40px; text-align: center; color: white; display: flex; align-items: center; justify-content: center;">
+            © 2024 Seedfaa Academy. All Rights Reserved.
+        </footer>
         
         
     </div>
@@ -287,6 +312,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+    
 
     <script defer>
         function sendmessage()  {
@@ -527,6 +557,49 @@
   
     // Initialize theme on page load
     loadTheme();
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      // Initialize Swiper
+      const swiper = new Swiper('.swiper-container', {
+          loop: true,
+          autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
+
+      // Full-Screen Viewer Logic
+      const fullscreenViewer = document.getElementById('fullscreenViewer');
+      const fullscreenImage = document.getElementById('fullscreenImage');
+      const closeViewer = document.getElementById('closeViewer');
+
+      document.querySelectorAll('.swiper-slide').forEach(slide => {
+          slide.addEventListener('click', () => {
+              const imageUrl = slide.getAttribute('data-image');
+              fullscreenImage.src = imageUrl;
+              fullscreenViewer.style.display = 'flex';
+          });
+      });
+
+      closeViewer.addEventListener('click', () => {
+          fullscreenViewer.style.display = 'none';
+      });
+
+      // Close full-screen viewer on clicking outside the image
+      fullscreenViewer.addEventListener('click', (e) => {
+          if (e.target === fullscreenViewer) {
+              fullscreenViewer.style.display = 'none';
+          }
+      });
   </script>
 </body>
 </html>
