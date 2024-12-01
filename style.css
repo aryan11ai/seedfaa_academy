@@ -282,7 +282,7 @@ main {
 .hamburger span {
   height: 3px;
   width: 25px;
-  background-color: #fff;
+  background-color: #000;
   margin: 4px 0;
   border-radius: 5px; /* Rounded ends */
   transition: all 0.3s ease;
