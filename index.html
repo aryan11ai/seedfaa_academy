@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedfaa Academy - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://aryan11ai.github.io/Seedfaa-store/Seedfaa_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+        .nav-links a.active {
+            color: #6728a1; /* Highlight active link */
+            border: 2px solid;
+            border-color: transparent;
+            border-bottom-color: #6728a1;
+        }
+        .hero {
+            height: 100vh; /* Full viewport height for the hero section */
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin-top: 20px; /* Offset for fixed navbar */
+        }
+        .arrow-button {
+          background-color: #16a085;
+          color: white;
+          padding: 15px 30px;
+          font-size: 16px;
+          font-weight: bold;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          transition: background-color 0.3s ease;
+          width: 200px;
+      }
+  
+      .arrow-button::after {
+          content: '➡';
+          position: absolute;
+          right: 20px;
+          opacity: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+  
+      .arrow-button:hover::after {
+          opacity: 1;
+          transform: translateX(5px);
+      }
+      .pulse-effect-button {
+        background-color: #e84393;
+        color: white;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        width: 200px;
+    }
+
+    .pulse-effect-button::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.4s ease, height 0.4s ease;
+    }
+
+    .pulse-effect-button:hover::after {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pulse-effect-button:hover {
+        background-color: #d63031;
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">Seedfaa <span class="a1">Academy</span><span class="a2">...</span></div>
+        <div class="img_logo"><img src="https://aryan11ai.github.io/Seedfaa-store/Seedfaa_logo.png" width="50px" alt=""></div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#updates" class="nav-link">Updates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
+    <!-- Floating Action Button Menu for Theme Toggle -->
+<div class="fab-menu" id="fabMenu">
+    <div class="fab-option" onclick="setTheme('light')" aria-label="Light Mode"><i class="fa-sharp fa-solid fa-sun"></i></div>
+    <div class="fab-option" onclick="setTheme('dark')" aria-label="Dark Mode"><i class="fa-sharp fa-solid fa-moon"></i></div>
+    <div class="fab-option" onclick="setTheme('auto')" aria-label="Auto Mode"><i class="fa-solid fa-gear"></i></div>
+    <button class="fab-toggle" aria-label="Toggle Theme" onclick="toggleFabMenu()"><i class='fas fa-brush'></i></button>
+  </div>
+
+
+    <br><br><br>
+
+    <div class="hero">
+        <section id="home" class="home">
+            <div>
+                <h1>Seedfaa is designed specifically for students like you.</h1>
+                <h2>Join Seedfaa today and unlock a world of opportunities for your academic and personal growth.</h2>
+            </div>
+    
+            <div>
+              
+                <button class="pulse-effect-button" onclick="togglejoinus()">Join Us</button>
+                <button class="arrow-button" onclick="window.location.href = 'About_self.html'">Learn More</button>
+
+            </div>
+        </section>
+        <section id="services" style="height: 100vh;">
+            <h2>Our Services</h2>
+
+            <div class="serv_section">
+                <div class="serv_card" id="serCard1">
+                    <h3>Our products</h3>
+                    <p>We provide you our study notes 1 to 10th class.</p>
+                    <p>Do you want to buy</p>
+                    <button type="button">Buy Now</button>
+                </div>
+        
+                <div class="serv_card" id="serCard2">
+                    <h3>Our Apps</h3>
+                    <p>Do you using android you can download our apps.</p>
+                    <p>Go to apps page</p>
+                    <button type="button" onclick="window.location.href = 'https://aryan11ai.github.io/Seedfaa-store/'">App</button>
+                </div>
+        
+                <div class="serv_card" id="serCard3">
+                    <h3>Our Classes</h3>
+                    <p>If you want to study you can watch our video.</p>
+                    <p>Click here to join your first class</p>
+                    <button type="button">Join</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="owenrs" class="owenrs">
+            <div class="serv_card_owner">
+                <div class="img">
+                    <img src="https://aryan11ai.github.io/Seedfaa-Academy/Untitled%20design%20(10).png" 
+                    alt="owner" width="150px">
+                </div>
+                <div class="name_title">
+                    <h2>Arvind Kumar</h2>
+                    <h3>Company's owner</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="updates" class="updates">
+            <div class="updatescrollview" id="updatescrollview" style="width: 90%; overflow: auto; display: flex;">
+                <div class="update">
+                    <h2>Quiz Time</h2>
+                    <h3>1, 2, 3... 10 all class avilable <br> (Medium Leavel)</h3>
+                    <div>
+                        <button onclick="window.location.href = 'https://aryan11ai.github.io/Quiz/'">Start Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature" class="feature">
+            <h2>Our Feature</h2>
+            <div class="feature-section">
+                <!-- Feature 1 -->
+                <div class="feature-box">
+                    <img loading="lazy" src="https://www.magnetbrains.com/wp-content/uploads/2021/07/02.png" alt="Quality Education">
+                    <p class="feature-title">100% Free<br>Quality Education</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-box">
+                    <img loading="lazy" src="https://www.magnetbrains.com/wp-content/uploads/2021/07/01.png" alt="Complete Syllabus">
+                    <p class="feature-title">100% Complete<br>Syllabus</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-box">
+                    <img loading="lazy" src="https://www.magnetbrains.com/wp-content/uploads/2023/03/Demo-Fonts_-1.png" alt="Doubt Solving">
+                    <p class="feature-title">Doubt Solving<br>Sessions</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-box">
+                    <img loading="lazy" src="https://www.magnetbrains.com/wp-content/uploads/2021/07/03.png" alt="Video Lectures">
+                    <p class="feature-title">Recorded Video<br>Lectures</p>
+                </div>
+            </div>
+        
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To provide quality education to everyone through innovative teaching methods and effective learning strategies.</p>
+            </div>
+        </section>
+
+        <section id="games" class="games">
+        </section>
+
+
+        <section id="contact" style="height: 100vh;">
+            
+    <div class="contact-container" data-name="ABCDEMGHIJKLMNOPQRSTUVWXYZ">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                <button class="submit-btn" onclick="sendmessage()">Send Message</button>
+            </form>
+        </div><br>
+        <div class="contact-image">
+            <img src="https://images.websitebuilderexpert.com/wp-content/uploads/2023/02/13045442/Contact-Us-Page-Examples.jpg" alt="Illustration">
+        </div>
+    </div>
+
+        </section>
+
+
+
+        <section id="about">
+            <h2 style="padding: 10px;">About Us</h2>
+            <img src="" alt="">
+            <div class="column1about">
+                <h2>Navigation</h2>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            </div>
+            <div class="column2about">
+                <h2>Join Us</h2>
+                <li><a href="https://www.youtube.com/@SeedfaaAcademy"><i class="fab fa-youtube"></i> Youtube</a></li>
+                <li><a href="https://www.facebook.com/Kumar19arvind89/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.instagram.com/seedfaa_academy?igsh=YzljYTk1ODg3Zg=="><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://twitter.com/seedfaaacademy?t=GjmMyTEbxAF3KWAFll4OPQ&s=09"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://github.com/aryan11ai/Seedfaa-Academy"><i class="fab fa-github"></i> GitHub</a></li>
+            </div>
+            <div class="column3about">
+                <h2>Product</h2>
+                <li><a href="#services" onclick="studyNotesAc()"><i class="fas fa-book"></i> Study Notes</a></li>
+                <li><a href="#services" onclick="studyVideosAc()"><i class="fas fa-video"></i> Study Videos</a></li>
+                <li><a href=""><i class="fas fa-book-open"></i> Study Books</a></li>
+            </div>
+            <div class="column3about">
+                <h2>Contact us</h2>
+            <li><a href="https://wa.me/9110029392"><i class="fab fa-whatsapp"></i>+91 9110029392</a></li>
+        </div>
+        </section>
+        
+        
+    </div>
+
+    <div class="action1" id="actionjoine" onclick="togglejoinus()">
+        <div class="act1">
+            <div>
+            <h2>Join on</h2>
+            <li><a href="https://www.youtube.com/@SeedfaaAcademy">Youtube</a></li>
+            <li><a href="https://www.facebook.com/Kumar19arvind89/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/seedfaa_academy?igsh=YzljYTk1ODg3Zg==">Instragram</a></li>
+            <li><a href="https://twitter.com/seedfaaacademy?t=GjmMyTEbxAF3KWAFll4OPQ&s=09">Twiter</a></li>
+            <li><a href="https://github.com/aryan11ai/Seedfaa-Academy">Git hub</a></li>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        function sendmessage()  {
+      
+          const nameUser = document.getElementById('name');
+          const email = document.getElementById('email');
+          const messageInput = document.getElementById('message')
+      
+          const message = `Name: ${nameUser.value}, Email: ${email.value}, Message: ${messageInput.value}`;
+          window.location.href = `https://wa.me/9110029392?text=${encodeURIComponent(message)}`;
+        }
+      </script>
+
+    <script defer>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+
+
+        // Highlight active nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            navLinks.forEach(link => {
+                const section = document.querySelector(link.getAttribute('href'));
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (scrollY >= sectionTop - sectionHeight / 3) {
+                    current = link.getAttribute('href');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <script defer
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"
+  ></script>
+  <script defer
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+  ></script>
+
+
+      <script defer>
+          // listen to the form submission
+          document
+            .getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+    
+              const serviceID = "service_atikn2r";
+              const templateID = "template_7lerdsb";
+    
+              // send the email here
+              emailjs.sendForm(serviceID, templateID, this).then(
+                (response) => {
+                  console.log("SUCCESS!", response.status, response.text);
+                  alert("SUCCESS!");
+                },
+                (error) => {
+                  console.log("FAILED...", error);
+                  alert("FAILED...", error);
+                }
+              );
+            });
+        </script>
+
+        <script defer>
+            function togglejoinus() {
+                const joinus = document.getElementById("actionjoine");
+                if (joinus.style.display === "none") {
+                    joinus.style.display = "flex"
+                } else{
+                    joinus.style.display = "none"
+                }
+            }
+        </script>
+
+
+
+<!--Heighlight-->
+<script>
+    function studyNotesAc() {
+        const serCard1 = document.getElementById('serCard1');
+
+            serCard1.style.backgroundColor = 'lightyellow';
+
+            // Set a timeout to revert the color after 2 seconds
+            setTimeout(() => {
+                serCard1.style.backgroundColor = 'white';
+            }, 2000); // 2000 milliseconds = 2 seconds
+    }
+    function studyVideosAc() {
+        const serCard3 = document.getElementById('serCard3');
+
+            serCard3.style.backgroundColor = 'lightyellow';
+
+            // Set a timeout to revert the color after 2 seconds
+            setTimeout(() => {
+                serCard3.style.backgroundColor = 'white';
+            }, 2000); // 2000 milliseconds = 2 seconds
+    }
+</script>
+
+<script>
+    let lastScrollY = window.scrollY;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY) {
+    // Scroll down, hide navbar
+    navbar.classList.add("hidden");
+  } else {
+    // Scroll up, show navbar
+    navbar.classList.remove("hidden");
+  }
+  lastScrollY = window.scrollY;
+});
+
+</script>
+<script>
+    function searchApps() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const suggestionsContainer = document.getElementById('suggestionsContainer');
+        const apps = document.querySelectorAll('.app');
+    
+        // Clear previous suggestions
+        suggestionsContainer.innerHTML = '';
+        suggestionsContainer.style.display = 'none';
+    
+        if (input) {
+            const filteredApps = Array.from(apps).filter(app => {
+                const appName = app.getAttribute('data-name').toLowerCase();
+                return appName.includes(input);
+            });
+    
+            if (filteredApps.length > 0) {
+                suggestionsContainer.style.display = 'block';
+                filteredApps.forEach(app => {
+                    const appName = app.getAttribute('data-name');
+                    const suggestion = document.createElement('div');
+                    suggestion.classList.add('suggestion');
+                    suggestion.innerHTML = highlightMatch(appName, input); // Highlight matched text
+                    suggestion.onclick = () => {
+                        // Clear suggestions and filter displayed apps
+                        clearSuggestions();
+                        displaySelectedApp(appName);
+                    };
+                    suggestionsContainer.appendChild(suggestion);
+                });
+            }
+        }
+    }
+    
+    function highlightMatch(text, input) {
+        const regex = new RegExp(`(${input})`, 'gi'); // Create a regex for the input
+        return text.replace(regex, '<span class="highlight">$1</span>'); // Highlight matched part
+    }
+    
+    function clearSuggestions() {
+        const suggestionsContainer = document.getElementById('suggestionsContainer');
+        suggestionsContainer.innerHTML = '';
+        suggestionsContainer.style.display = 'none';
+    }
+    
+    function displaySelectedApp(selectedApp) {
+        const apps = document.querySelectorAll('.app');
+        apps.forEach(app => {
+            if (app.getAttribute('data-name').toLowerCase() === selectedApp.toLowerCase()) {
+                app.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                app.style.border = '2px solid #6a11cb'; // Highlight selected app
+            } else {
+                app.style.display = 'none'; // Hide other apps
+            }
+        });
+    }
+    
+</script>
+
+<script>
+    // Toggle the Navbar menu for mobile
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  
+    // Toggle FAB menu visibility
+    function toggleFabMenu() {
+      document.getElementById('fabMenu').classList.toggle('open');
+    }
+  
+    // Load theme based on user preference or system setting
+    function loadTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+      } else if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+      } else {
+        // Default to system setting if 'auto' or not set
+        document.body.classList.add(systemPrefersDark ? 'dark-mode' : 'light-mode');
+      }
+    }
+  
+    // Set theme based on user choice
+    function setTheme(theme) {
+      document.body.classList.remove('light-mode', 'dark-mode');
+      
+      if (theme === 'light') {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+      } else if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        // 'auto' will let the system preference dictate the theme
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.body.classList.add(systemPrefersDark ? 'dark-mode' : 'light-mode');
+        localStorage.setItem('theme', 'auto');
+      }
+      toggleFabMenu(); // Close the FAB menu after selecting theme
+    }
+  
+    // Initialize theme on page load
+    loadTheme();
+  </script>
+</body>
+</html>
