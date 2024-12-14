@@ -170,6 +170,55 @@
     .pulse-effect-button:hover {
         background-color: #d63031;
     }
+    .laval2{
+        background-image: url('https://raw.githubusercontent.com/aryan11ai/Quiz-3-leavel/refs/heads/main/leavel.png');
+        background-size: 200px;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 280px;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .laval2 button{
+        margin-top: 60px;
+        width: 90%;
+        height: 30px;
+        border: 0;
+        border-radius: 50px;
+        background-color: #ffffff;
+        color: #000;
+    }
+    .laval1{
+        background-size: 200px;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 280px;
+        text-align: center;
+        padding-top: 80px;
+        margin-right: 20px;
+        border-radius: 20px;
+        background: linear-gradient(45deg, rgb(255, 153, 0), yellow);
+        
+        
+    }
+    .laval1 button{
+        margin-top: 60px;
+        width: 90%;
+        height: 30px;
+        border: 0;
+        border-radius: 50px;
+        background-color: #ffffff;
+        color: #000;
+    }
+    #updates{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .update{
+        display: grid;
+    }
     </style>
 </head>
 <body>
@@ -243,7 +292,6 @@
             </div>
         </section>
 
-        <br><br>
 
         <section id="owenrs" class="owenrs">
             <div class="serv_card_owner">
@@ -261,37 +309,34 @@
         <!--Topper of week-->
         <section class="topper_week">
             <div class="topper-card">
-                <img src="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/images/Ayushman.png" alt="Ayushman Verma">
-                <h2>Ayushman Verma</h2>
-                <p>Congratulations on your outstanding performance this week!</p>
+                <img src="https://raw.githubusercontent.com/aryan11ai/seedfaa_academy/refs/heads/main/People.webp" alt="">
+                <h2>No Student</h2>
+                <p>You can come here by gving quiz</p>
                 <a onclick="openModal()">View Details</a>
             </div>
         
             <div class="modal" id="modal">
-                <h3>Ayushman Verma</h3>
-                <p><b>Ayushman Verma</b> has achieved remarkable results this week, showcasing exceptional skills and dedication.</p>
-                <p>Father's name - <b>Ranjeet verma</b></p>  
-                <p>Address - Village - Arari, P.S - Birni, District - Giridih, State - Jharkhand </p>
-                <p><b>School name - Mount Agmount Public High School, Janta jaridih</b></p>
-                <p>Class - 6</p>
-                <p>Roll no - 1</p>
-                <p>Heigh Scored in <b>Math</b> total <b>49/50</b></p>
+                <h3>?</h3>
                 <button onclick="closeModal()">Close</button>
             </div>        
         </section>
 
         <section id="updates" class="updates">
-            <div class="updatescrollview" id="updatescrollview" style="width: 90%; overflow: auto; display: flex;">
                 <div class="update">
-                    <h2>Quiz Time</h2>
-                    <h3>1, 2, 3... 10 all class avilable <br> (Medium Leavel)</h3>
-                    <div>
-                        <button onclick="window.location.href = 'https://aryan11ai.github.io/Quiz/'">Start Now</button>
-                    </div>
+                    <div class="laval1">
+                        <h3>Level 2</h3>
+                        <h2>Quiz Time</h2>
+                        <h3>Join Now for 1 to 10</h3>
+                            <button onclick="window.location.href = 'https://aryan11ai.github.io/Quiz/'">Start Now</button>
+                            </div>
+                    <div class="laval2">
+                        <h3>Level 3</h3>
+                        <h2>Quiz Time</h2>
+                        <h3>Join Now for 1 to 10</h3>
+                        <button  onclick="window.location.href = 'https://aryan11ai.github.io/Quiz-3-leavel/'">Join Now</button>
                 </div>
-            </div>
+                </div>
         </section>
-
         <section id="feature" class="feature">
             <h2>Our Feature</h2>
             <div class="feature-section">
