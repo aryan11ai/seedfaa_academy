@@ -390,6 +390,432 @@
         </div>
         </section>
 
+        <section id="blogsOrSStories">
+            <style>
+                #blogsOrSStories {
+                    background-color: #f9f9f9;
+                    font-family: Arial, sans-serif;
+                }
+                
+                .stories {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow-y: auto;
+                    width: 100%;
+
+                }
+                
+                .containerStory {
+                    background: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                    text-align: center;
+                    padding: 20px;
+                    margin: 20px;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .containerStory:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                }
+                .containerStory:active {
+                    transform: scale(0.90);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                }
+                
+                .storiesPageView img {
+                    border-radius: 8px;
+                    margin-bottom: 15px;
+                }
+                
+                .storiesPageView label {
+                    display: block;
+                    margin: 10px 0;
+                    color: #555;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                
+                .storiesPageView a {
+                    text-decoration: none;
+                    color: #007BFF;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+                }
+                
+                .storiesPageView a:hover {
+                    color: #0056b3;
+                }
+                
+                .storiesPageView p {
+                    font-size: 14px;
+                    color: #666;
+                    margin: 0;
+                }
+                
+            </style>
+            <div class="stories">
+                <div class="containerStory" onclick="storyNameTheMacalWatchCloseOrOpen()">
+                    <div class="storiesPageView">
+                        <img src="Magical.png" alt="" width="300px" title="The Macical Watch"><br>
+                        <label for="titleofstory" title="Title">
+                            <a href="">The Magical Watch</a>
+                        </label>
+                        <label for="shortdis" title="short description">
+                            <p>A boy and friey. He like to help every one. He got a Magical watch</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="containerStory" onclick="popUpStoryGalleryCloseOrOpen()">
+                    <div class="storiesPageView">
+                        <img src="Magical (2).png" alt="" width="300px" title=""><br>
+                        <label for="titleofstory" title="Title">
+                            <a href="">See More</a>
+                        </label>
+                        <label for="shortdis" title="short description">
+                            <p>More and more you can see more</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <div class="container_of_storys" id="popUpStoryGallery">
+            <div class="close_stroy_btn_for_gallary" onclick="popUpStoryGalleryCloseOrOpen()">❌</div>
+            <div class="upload_a_user_story_to_whatsapp_then"><button onclick="stroy_upload_error_popupCloseOrOpen()">Uplaod a story</button></div>
+            <div class="axtromfk">
+                <h2>Stroy Section 1</h2><br>
+                <div class="horizental_row_of_section_StC">
+                    <div class="stroiesQrs" onclick="storyNameTheMacalWatchCloseOrOpen(); popUpStoryGalleryCloseOrOpen()">
+                        <img src="Magical.png" title="A boy and friey. He like to help every one. He got a Magical watch" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>The Magical Watch </b>A boy and friey...</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                </div>
+                <h2>Stroy Section 2</h2><br>
+                <div class="horizental_row_of_section_StC">
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                </div>
+                <h2>Stroy Section 3</h2><br>
+                <div class="horizental_row_of_section_StC">
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                </div>
+                <h2>Stroy Section 4</h2><br>
+                <div class="horizental_row_of_section_StC">
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                </div>
+                <h2>Stroy Section 5</h2><br>
+                <div class="horizental_row_of_section_StC">
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                    <div class="stroiesQrs">
+                        <img src="Magical (1).png" width="180px" alt="">
+                        <label for="nothing">
+                            <p><b>Error </b>stroy not avilable</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stroy_upload_error_popup" id="stroy_upload_error_popup" >
+            <div class="error_msg_upload_a_story">
+                <h1>Oops....</h1>
+            <p>We have no more advance tecnology to direct upload your stoy.</p>
+            <p>Can you <a href="https://wa.me/9110029392">click here</a> then send your stroy in my whatapp.</p>
+            <p>I'll update and publish your story here.</p>
+            <a href="https://wa.me/9110029392"><button onclick="stroy_upload_error_popupCloseOrOpen()">Click here!</button></a>
+            <button onclick="stroy_upload_error_popupCloseOrOpen()">Close</button>
+            </div>
+        </div>
+
+        <div class="storyNameTheMacalWatch" id="storyNameTheMacalWatch">
+            <style>
+                .storyNameTheMacalWatch{
+                    width: 100%;
+                    height: 100vh;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 10000000000000000000000000000000;
+                }
+                .dfe4gtqayq54t{
+                    overflow: auto;
+                    height: 100vh;
+                }
+                .closebtnfnweiobfvw{
+                    top: 10px;
+                    right: 10px;
+                    position: absolute;
+                    padding: 5px;
+                    background-color: #bbbbbb;
+                    border-radius: 200px;
+                    cursor: pointer;
+                }
+                .efbcuewgbqfuiwd{
+                    bottom: 30px;
+                    right: 100px;
+                    position: absolute;
+                    padding: 5px;
+                    background-color: #bbbbbb;
+                    cursor: pointer;
+                    color: #ffffff;
+                    border-radius: 200px;
+                    background-color: #4CAF50;
+                }
+                .AutherOfTheMacicalWatch{
+                    width: 100%;
+                    height: 100vh;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 1000000000000000000000000000000000000000;
+                    text-align: center;
+                }
+                .AutherOfTheMacicalWatch .detailfnrejfb{
+                    width: 400px;
+                    height: 300px;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 10px;
+                    box-shadow: 0 1px 6px;
+                    justify-content: center;
+                    display: flex;
+                }
+                .AutherOfTheMacicalWatch .detailfnrejfb .imag img{
+                    border-radius: 50%;
+                    justify-self: center;
+                    display: flex;
+                }
+            </style>
+            <div class="closebtnfnweiobfvw" onclick="storyNameTheMacalWatchCloseOrOpen()"> ❌ </div>
+            <div class="efbcuewgbqfuiwd" onclick="AutherOfTheMacicalWatchCloseOrOpen()">See Auther</div>
+            <div class="dfe4gtqayq54t">
+                <img src="1.png" width="450px" alt=""><br>
+                <img src="2.png" width="450px" alt="">
+            </div>
+
+
+
+            <!--Auther-->
+            <div class="AutherOfTheMacicalWatch" id="AutherOfTheMacicalWatch" onclick="AutherOfTheMacicalWatchCloseOrOpen()">
+                <div class="detailfnrejfb">
+                    <div><br><br>
+                        <div class="imag">
+                            <img src="Aryan.jpg" width="150px" alt="">
+                        </div><br><br>
+                        <div class="details">
+                            <p><b>Aryan Kumar</b></p>
+                            <p>He wroted this story for seedfaa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <section id="contact" style="height: 100vh;">
             
@@ -439,12 +865,13 @@
             <div class="column3about">
                 <h2>Contact us</h2>
             <li><a href="https://wa.me/9110029392"><i class="fab fa-whatsapp"></i>+91 9110029392</a></li>
+            
         </div>
         
         </section>
         <!--Sub Footer-->
         <footer style="background-color: #1d1d1d; height: 40px; text-align: center; color: white; display: flex; align-items: center; justify-content: center;">
-            © 2024 Seedfaa Academy. All Rights Reserved.
+            © 2025 Seedfaa Academy. All Rights Reserved.
         </footer>
         
         
@@ -466,7 +893,50 @@
 
 
 
-    
+    <script>
+        const popUpStoryGallery = document.getElementById('popUpStoryGallery');
+
+        function popUpStoryGalleryCloseOrOpen() {
+            if (popUpStoryGallery.style.display === 'none'){
+                popUpStoryGallery.style.display = 'flex'
+            }
+            else{
+                popUpStoryGallery.style.display = 'none'
+            }
+        }
+        const stroy_upload_error_popup = document.getElementById('stroy_upload_error_popup');
+
+        function stroy_upload_error_popupCloseOrOpen() {
+            if (stroy_upload_error_popup.style.display === 'none'){
+                stroy_upload_error_popup.style.display = 'flex'
+            }
+            else{
+                stroy_upload_error_popup.style.display = 'none'
+            }
+        }
+        
+        const storyNameTheMacalWatch = document.getElementById('storyNameTheMacalWatch');
+
+        function storyNameTheMacalWatchCloseOrOpen() {
+            if (storyNameTheMacalWatch.style.display === 'none'){
+                storyNameTheMacalWatch.style.display = 'flex'
+            }
+            else{
+                storyNameTheMacalWatch.style.display = 'none'
+            }
+        }
+
+        const AutherOfTheMacicalWatch = document.getElementById('AutherOfTheMacicalWatch');
+
+        function AutherOfTheMacicalWatchCloseOrOpen() {
+            if (AutherOfTheMacicalWatch.style.display === 'none'){
+                AutherOfTheMacicalWatch.style.display = 'flex'
+            }
+            else{
+                AutherOfTheMacicalWatch.style.display = 'none'
+            }
+        }
+    </script>
 
     <script defer>
         function sendmessage()  {

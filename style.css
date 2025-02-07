@@ -54,12 +54,10 @@ body.dark-mode .owenrs{
 body.dark-mode .owenrs .serv_card_owner{
   background-color: #7a7a7a;
 }
-body.dark-mode .updates{
+body.dark-mode #updates{
   background-color: #333333;
 }
-body.dark-mode .updates .update{
-  background: #444444;
-}
+
 body.dark-mode #feature{
   background-color: #272727;
   color: #ffffff;
@@ -86,10 +84,10 @@ body.dark-mode #about{
 body.dark-mode #about a{
   color: white;
 }
-body.dark-mode .topper_week{
+body.dark-mode .topper_week, body.dark-mode section#blogsOrSStories{
   background-color: #353535;
 }
-body.dark-mode .topper_week .topper-card{
+body.dark-mode .topper_week .topper-card, body.dark-mode div.containerStory{
   background-color: #4e4e4e;
 }
 body.dark-mode .topper_week .topper-card h2{
@@ -842,4 +840,115 @@ a {
 .event_photos{
   width: 100%;
   height: 100vh;
+}
+
+
+
+
+/* XYZ */
+.container_of_storys{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000000000000000000000000000000000000;
+}
+.container_of_storys .upload_a_user_story_to_whatsapp_then button{
+  background-color: rgb(0, 187, 0);
+  top: 25px;
+  right: 80px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 0 2px green;
+  z-index: 1000000000000000000000000000000000000000000000000;
+}
+.container_of_storys h2{
+  color: white;
+}
+.container_of_storys .close_stroy_btn_for_gallary{
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  padding: 10px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1000000000000000000000000000000000000000000000000;
+}
+.container_of_storys .axtromfk{
+  width: 95%;
+  height: 95%;
+  background-color: rgba(0, 0, 0, 0.568);
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  padding: 10px;
+  overflow-x: auto;
+}
+.container_of_storys .axtromfk .horizental_row_of_section_StC{
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.container_of_storys .axtromfk .horizental_row_of_section_StC .stroiesQrs{
+  background-color: rgba(7, 7, 7, 0.61);
+  padding: 3px;
+  color: white;
+  border-radius: 5px;
+}
+.container_of_storys .axtromfk .horizental_row_of_section_StC .stroiesQrs:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.stroy_upload_error_popup{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000000000000000000000000000000000000;
+}
+.error_msg_upload_a_story{
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  border: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 9px rgba(43, 43, 43, 0.534);
+  animation: popup .1s forwards;
+}
+.error_msg_upload_a_story p a{
+  background-color: #1eff0057;
+  border-radius: 5px;
+}
+.error_msg_upload_a_story button{
+  background-color: rgb(0, 187, 0);
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  bottom: 0;
+  box-shadow: 0 4px 6px green;
+  z-index: 1000000000000000000000000000000000000000000000000;
+}
+.error_msg_upload_a_story button:hover{
+  background-color: rgb(2, 255, 2);
+}
+
+@keyframes popup{
+  from{
+    transform: scale(1.05);
+  }
 }
